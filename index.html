@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>UI Layout</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        class="video-background"
+        style="height: 100vh"
+      >
+        <source src="./assets/gif.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="header">
+        <div class="header-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="header-logo">
+          <img src="./assets/logo.png" alt="Stikkman UX Logo" class="logo" />
+          <p>LOREM , IPSUM</p>
+        </div>
+      </div>
+
+      <div class="container1">
+        <!--Background Video -->
+
+        <div class="content">
+          <h4 class="title">
+            <span class="" style="padding-right: 50px">A LOREM IPSUM</span>
+            <br />
+            <em> <span style="padding-left: 30px">in LOREM IPSUM</span></em>
+          </h4>
+          <div class="author">
+            <img src="./assets/profile.png" alt="Author" class="author-image" />
+            <p class="author-name">
+              lorem by <br />
+              <span style="font-weight: bold"> Lorem & Ipsum lorem</span>
+            </p>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: center">
+          <div class="custom-button">
+            <button class="icon-text-button">
+              <img src="./assest/iconCalender.png" alt="" />
+              <span>LOREM</span>
+            </button>
+            <div class="divider"></div>
+            <button class="icon-text-button">
+              <img src="./assets/IconPhone.png" alt="" />
+              <span>IPSUM</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="footer">
+          <p>27</p>
+          <img src="./assets/weather_snowy.png" alt="weather image" />
+          <p>lorem</p>
+        </div>
+      </div>
+
+      <div class="container2">
+        <img class="vector" src="./assets/Vector.png" alt="" />
+        <p class="title-two">
+          Lorem ipsum dolor <br />
+          <span>lorem IPSUM sit amet </span>
+        </p>
+        <img id="growingImage" class="image-vr" src="./assets/image2.png" alt="" />
+
+        <div class="button-container" id="buttonContainer" style="z-index: 12">
+          <div class="custom-button">
+            <button class="icon-text-button">
+              <img src="./assets/iconCalender.png" alt="" />
+              <span>LOREM</span>
+            </button>
+            <div class="divider"></div>
+            <button class="icon-text-button">
+              <img src="./assets/IconPhone.png" alt="" />
+              <span>IPSUM</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container3">
+        <div class="container2-footer">
+          <div class="custom-button container2-btn" id="smallButtonContainer">
+            <button class="icon-button">
+              <img src="./assets/calender.png" alt="" />
+            </button>
+            <div class="divider"></div>
+            <button class="icon-button">
+              <img src="./assets/phone.png" alt="" />
+            </button>
+          </div>
+
+          <div class="container2-footer-content">
+
+            <p style="padding-right: 18px;">
+              <span>Lorem ipsum </span><br />
+              <span>dolor sit</span>
+          </p>
+            <div class="divider-black"></div>
+            <p style="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container4">
+        <div class="container4-content">
+          <p>LOREM OF</p>
+        <p>LOREM of IPSUM</p>
+
+        <p>
+          A Lorem for the ipsum, A lorem for the ipsum, A lorem for the ipsum. A
+          Lorem for the ipsum, A lorem for the ipsum, A lorem for the ipsum.
+        </p>
+
+        <p>
+          .A Lorem for the ipsum, A lorem for the ipsum, A lorem for the ipsum.A
+          Lorem for the ipsum, A lorem for the ipsum, A lorem for the ipsum
+        </p>
+        </div>
+        
+
+        <img id="scrollImage" src="./assets/c4.png" alt="" />
+
+        <!-- <p>A Lorem for the ipsum, A lorem for the ipsum, A lorem for the ipsum. A Lorem for the ipsum, A lorem for the ipsum, A lorem for the ipsum.</p> -->
+
+        <div class="container4-footer-content">
+          <div style="display: flex; align-items: center; justify-content: center;">
+            <p style="padding-right: 18px;">
+                <span>Lorem ipsum </span><br />
+                <span>dolor sit</span>
+            </p>
+              <div class="divider-black"></div>
+              <p style="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  /* height: 100%; */
+  /* font-family: Arial, sans-serif; */
+  font-family: "Plus Jakarta Sans", sans-serif;
+  /* background-color: #404040; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 425px; */
+}
+/* .video-background {
+    object-fit: cover;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
+    /* width: 425px; */
+
+/* } */
+.container {
+  position: relative;
+  /* width: 100%; */
+  max-width: 425px;
+  /* height: 101vh; */
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Make sure the video stays behind all other content */
+}
+
+.container1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Ensure the content is above the video */
+  /* Other styles */
+}
+
+/* .container{
+    background: url('./forest-bg.png') no-repeat center center;
+    background-size: cover;
+    
+} */
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 425px;
+  height: 89vh;
+
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+.container .header {
+  display: flex;
+  /* position: sticky; */
+  z-index: 20;
+  top: 6%;
+  position: sticky;
+}
+.header {
+  /* padding-top: 0px; */
+  padding: 0 40px 40px 40px;
+}
+.header-menu {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  /* text-align: left; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding-left: 86px;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.logo {
+  /* width: 50px;
+    height: auto; */
+}
+
+.company-name {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.company-subtitle {
+  font-size: 0.8em;
+  /* color: rgba(255, 255, 255, 0.8); */
+  color: black;
+}
+
+.content {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.title {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: lighter;
+  font-family: "Lora", serif;
+}
+
+.title em {
+  font-style: italic;
+  font-weight: lighter;
+  font-family: "Lora", serif;
+}
+
+.author {
+  margin-top: 140px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.author-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author-name {
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+.actions {
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: #404040;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #606060;
+}
+
+.footer {
+  /* margin-bottom: 20px; */
+  /* font-size: 12px; */
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+.footer img {
+  height: fit-content;
+  width: fit-content;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text {
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align items vertically if needed */
+  /* background-color: white; */
+  backdrop-filter: blur(59.79486846923828px);
+  /* width: fit-content; */
+}
+
+.button {
+  padding: 10px 20px; /* Adjust padding as necessary */
+  font-size: 16px; /* Adjust font size */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  margin: 0 5px; /* Space between buttons */
+  border: none; /* Remove default borders */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Text color */
+  transition: background-color 0.3s; /* Transition effect for hover */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
+.icon {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.container2 {
+    font-family: "Lora", serif;
+  padding: 40px;
+  background-color: #212d2d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 425px; */
+  /* height: 2400px; */
+  gap: 50px;
+  overflow: hidden;
+  /* background: url('./forest-bg.png') no-repeat center center; */
+  /* background-size: cover; */
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.container2 img {
+}
+
+.image-vr {
+  transition: transform 0.5s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  z-index: 10;
+}
+
+.button-container {
+  /* z-index: 2;
+    position: relative;
+    top: -145px;
+    transition: all 0.3s ease; */
+
+  /* z-index: 2;
+    position: relative;
+    bottom: 20px; */
+
+  /* right: 20px; */
+  transition: transform 0.3s ease; /* Smooth transition for position change */
+}
+
+.button-container.fixed {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  text-align: right;
+  z-index: 10;
+}
+
+.vector {
+  display: block;
+  z-index: 5;
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  top: -75px;
+}
+
+.title-two {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -70px;
+}
+
+.container2-footer {
+  display: flex;
+  /* flex-direction: row; */
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  color: black;
+
+  margin-top: 40px;
+}
+
+.container2-footer-content {
+    font-family: "Lora", serif;
+  background-color: #dfdfe0;
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  display: flex;
+}
+
+.container3 {
+  /* padding: 40px; */
+  background-color: #dfdfe0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 425px; */
+  /* height: 2400px; */
+  gap: 50px;
+  overflow: hidden;
+  background: url("./assets/paper.png") no-repeat center center;
+  background-size: cover;
+  /* color: white; */
+  text-align: center;
+  padding: 0px 40px 40px 40px;
+}
+
+.container4 {
+  padding: 40px;
+  background-color: #212d2d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 425px; */
+  /* height: 500px; */
+  /* height: 2400px; */
+  gap: 36px;
+  overflow: hidden;
+  /* overflow-y: scroll;  */
+  /* background: url('./forest-bg.png') no-repeat center center; */
+  /* background-size: cover; */
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+.container4-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 44px;
+  margin-bottom: 40px ;
+}
+
+#scrollImage {
+  transition: transform 0.2s; /* Smooth scaling transition */
+  max-width: 100%;
+  /* height: 30px;
+    width: 40px; */
+}
+
+.container4-footer-content {
+  /* background-color: #DFDFE0; */
+  margin-top: 250px;
+}
+.container4-btn {
+  width: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (min-width: 325px) and (max-width: 500px) {
+  .sticky {
+    position: fixed;
+    display: flex;
+    bottom: 100px; /* Stick to the bottom */
+    right: 40px; /* Stick to the right side */
+    /* top: 610px; */
+    z-index: 100; /* Make sure it's on top of other elements */
+  }
+}
+/*  */
+
+/* right: 550px; */
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  .sticky {
+    position: fixed;
+    display: flex;
+    bottom: 100px;
+    right: 230px;
+    z-index: 100;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .sticky {
+    position: fixed;
+    display: flex;
+    bottom: 100px;
+    right: 336px;
+    z-index: 100;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  .sticky {
+    position: fixed;
+    display: flex;
+    bottom: 100px;
+    right: 545px;
+    z-index: 100;
+  }
+}
+
+/* buttoonn  */
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  background-color: #6f6f5e; /* Similar color from your button */
+  border-radius: 50px;
+  padding: 8px 10px;
+  width: fit-content;
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+  color: #2b393b; /* Icon color */
+  font-size: 0px; /* Icon size */
+  padding: 8px;
+  cursor: pointer;
+}
+
+.divider {
+  width: 1px;
+  height: 30px;
+  background-color: #2b393b; /* Divider color */
+  margin: 0 15px;
+}
+
+.divider-black{
+    width: 4px;
+    height: 80px;
+    background-color: black;
+
+}
+
+.icon-button i {
+  vertical-align: middle;
+}
+
+.icon-button:focus {
+  outline: none;
+}
+
+/* long butoon  */
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  background-color: #5f6969; /* Background color matching the button */
+  border-radius: 50px;
+  padding: 10px 20px;
+  width: fit-content;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon-text-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  color: #d1bca5; /* Text and icon color */
+  font-size: 16px; /* Text size */
+  /* font-family: Arial, sans-serif; */
+  /* font-weight: bold; */
+  cursor: pointer;
+  padding: 10px;
+  gap: 10px;
+}
+
+.icon-text-button i {
+  margin-right: 8px; /* Space between icon and text */
+  font-size: 18px; /* Icon size */
+}
+
+.divider {
+  width: 1px;
+  height: 35px;
+  background-color: #d1bca5; /* Divider color */
+  margin: 0 15px;
+}
+
+.icon-text-button:focus {
+  outline: none;
+}
